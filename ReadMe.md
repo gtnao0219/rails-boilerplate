@@ -33,3 +33,8 @@ docker build -t my_app_image .
 ```
 docker-compose up -d
 ```
+
+# erb2slim
+```
+for i in app/views/**/*.erb; do erb2slim $i ${i%erb}slim && rm $i; done
+```

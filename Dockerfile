@@ -17,6 +17,6 @@ COPY Gemfile ./Gemfile
 COPY Gemfile.lock ./Gemfile.lock
 RUN bundle install -j8
 
-# COPY . .
-# RUN ./bin/rails assets:precompile
+COPY . .
+RUN ./bin/rails assets:precompile
 # RUN NODE_ENV=production ./bin/webpack

@@ -25,3 +25,11 @@ docker run --rm -it -v "$PWD":/app rails_boilerplate rails new . -d mysql --skip
 
 not overwrite ReadMe.md  
 overwrite Gemfile
+
+# Docker
+```
+docker build -t my_app_image .
+```
+```
+docker-compose up -d
+```
